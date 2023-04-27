@@ -1,8 +1,70 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kdam Thmor Pro', sans-serif;
 }
 
-.App-logo {
+h1 {
+  text-align: center;
+  font-size: 300%;
+  margin: 10px;
+  padding: 10px;
+}
+
+h2{
+  text-align: center;
+  font-size: 150%;
+  margin: 10px;
+  padding: 10px;
+}
+
+.buttonCTA {
+  background-color: rgb(37, 147, 190);
+  color: rgb(247, 247, 247);
+  font-size: 15px;
+  font-weight: 500;
+  align-content: flex-end;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  
+}
+.buttonCTA:hover {
+  background-color: rgb(68, 190, 37);
+  box-shadow: 1.5px 1.5px 10px rgb(182, 179, 179);
+}
+
+.cardContainer {
+  display: flex;
+  text-align: center;
+  margin: 10px;
+  border: 5px solid black;
+  border-radius: 20px;
+  justify-content: space-evenly;
+  
+}
+
+.card {
+  display: flex;
+  margin: 10px;
+  position: relative;
+  padding: 10px;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.cardImg {
+  display: inline-block;
+  position: relative;
+  height: 15vw;
+  width: 15vw;
+  justify-content: center;
+}
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +97,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

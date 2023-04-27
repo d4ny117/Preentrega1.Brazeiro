@@ -1,23 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar/Navbar';
+import Cards from './components/Cards/Cards';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+//import Swal from 'sweetalert2'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <h1 className="text-danger">PC HardMarket</h1>
+      <Navbar/>
       </header>
+      <body className="App-body">
+        <div>
+          <ItemListContainer greeting={'Nuestra seleccion de productos'}/>
+          <Cards/>
+        </div>
+      </body>
+
     </div>
   );
 }
